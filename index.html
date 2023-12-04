@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сайт Пэна</title>
+    <link rel="website icon"  type="png" href=""  >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+<body>
+<div class="sitecode">
+      <nav style="position:absolute; z-index:20;left:0;right:0;margin:0px auto;top:-55px;">
+  <ul>
+    <li>
+      <a href="#" >Home</a>
+    </li>
+    <li>
+      <a href="#" >About</a>
+    </li>
+    <li>
+      <a href="#" >Services</a>
+    </li>
+    <li>
+      <a href="#" >Contact</a>
+    </li>
+  </ul>
+</nav>
+        <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+
+nav {
+  max-width: 960px;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 8px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+    @media (max-width: 479px) {
+    nav ul li a  {
+  font-size: 12px;
+        }
+}
+
+    @media (max-width: 388px) {
+    nav ul li a  {
+  font-size: 9px;
+        }
+}
+
+    @media (max-width: 342px) {
+    nav ul li a  {
+  font-size: 9px;
+        }
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7);
+}
+
+
+    </style>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-interval="1000">
+  <div class="carousel-inner" style="position:relative;height: 873px;" >
+    <div class="carousel-item active">
+      <div class="imgcarousel">
+      <img src="img/slider-19.jpeg" class="d-block w-100" alt="..."></div>
+      <div class="slide-content">
+        <div class="text">Носить это тепло и приятно<br><b>Новые поступления</b></div>
+        <button class="button">К ТОВАРАМ</button>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="imgcarousel">
+      <img src="img/slider-20.jpg" class="d-block w-100" alt="..."></div>
+      <div class="slide-content">
+        <div class="text">Подростки носят это с любой одеждой<br><b>Носите повседневно</b></div>
+        <button class="button">К ТОВАРАМ</button>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="imgcarousel">
+      <img src="img/slider-21.jpg" class="d-block w-100" alt="..."></div>
+      <div class="slide-content">
+        <div class="text">Круто, красочно и удобно<br><b>Веселье и отдых</b></div>
+        <button class="button">К ТОВАРАМ</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <style>
+    .imgcarousel img {
+    position:relative;
+    height: 873px;
+    }
+
+    @media (max-width: 1440px) {
+    .imgcarousel img {
+        height: 773px;
+        }
+}
+
+    @media (max-width: 1024px) {
+    .imgcarousel img {
+        height: 673px;
+        }
+}
+
+    @media (max-width: 768px) {
+    .imgcarousel img {
+        height: 573px;
+        }
+}
+
+    @media (max-width: 600px) {
+    .imgcarousel img {
+        height: 473px;
+        }
+}
+
+    @media (max-width: 425px) {
+    .imgcarousel img {
+        height: 373px;
+        }
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.text {
+  font-size: 50px;
+  margin-bottom: 10px auto;
+  color:white;
+}
+
+    @media (max-width: 1440px) {
+    .text {
+font-size: 40px;
+        }
+}
+
+    @media (max-width: 1024px) {
+    .text {
+font-size: 30px;
+        }
+}
+
+    @media (max-width: 768px) {
+    .text {
+font-size: 30px;
+        }
+}
+
+
+    @media (max-width: 600px) {
+    .text {
+font-size: 20px;
+        }
+}
+
+    @media (max-width: 425px) {
+    .text {
+font-size: 20px;
+        }
+}
+
+.button {
+  padding: 10px 40px;
+  font-size: 18px;
+  background:black;
+  color:white;
+  border: 1px solid black;
+}
+
+    @media (max-width: 768px) {
+    .button  {
+  padding: 7px 30px;
+        }
+}
+    @media (max-width: 375px) {
+    .button  {
+  padding: 7px 20px;
+        }
+}
+</style>
+
+
+
+<div class="wrap">
+  <div class="box">
+    <div class="box-top">
+      <img class="box-image" src="img/Untitled-1-1.jpg" alt="Girl Eating Pizza">
+      <div class="title-flex">
+        <h3 class="box-title">Аксессуары</h3>
+        <p class="user-follow-info">Новинка</p>
+      </div>
+      <p class="description">Каждый из этих аксессуаров имеет свою магию, которая помогает подчеркнуть уникальность девушки и ее индивидуальный стиль. Будьте смелыми в экспериментах с аксессуарами и не бойтесь выделяться из толпы, создавая собственное, неповторимое обаяние.</p>
+    </div>
+    <a href="#" class="button">Посмотреть и купить</a>
+  </div>
+  <div class="box">
+    <div class="box-top">
+      <img class="box-image" src="img/nedorogaya_cosmetika.jpg" alt="Girl Eating Pizza">
+      <div class="title-flex">
+        <h3 class="box-title">Косметика</h3>
+        <p class="user-follow-info">Новинка</p>
+      </div>
+      <p class="description">Косметика - это не только средства для ухода за внешностью, но и индустрия, которая создает рабочие места и вносит значительный вклад в экономику. Многие компании занимаются разработкой, предлагая широкий выбор для любого вкуса и бюджета.</p>
+    </div>
+    <a href="#" class="button">Посмотреть и купить</a>
+  </div>
+  <div class="box">
+    <div class="box-top">
+      <img class="box-image" src="img/categories-6.jpg" alt="Girl Eating Pizza">
+      <div class="title-flex">
+        <h3 class="box-title">Для неё</h3>
+        <p class="user-follow-info">Новинка</p>
+      </div>
+      <p class="description">Мода меняется с каждым сезоном, и она является отражением нашего общества и культуры. Но на что мы обращаем внимание при выборе одежды? Ведь она должна быть не только красивой, но и комфортной, практичной и функциональной.</p>
+    </div>
+    <a href="#" class="button">Посмотреть и купить</a>
+  </div>
+  <div class="box">
+    <div class="box-top">
+      <img class="box-image" src="img/categories-5.jpg" alt="Girl Eating Pizza">
+      <div class="title-flex">
+        <h3 class="box-title">Для него</h3>
+        <p class="user-follow-info">Новинка</p>
+      </div>
+      <p class="description">Одежда – это наше оружие в борьбе с плохим настроением. Если утро начинается серым и холодным, мы можем выбрать яркую и уютную одежду, чтобы разбудить в себе радость и энергию. В то же время, важно адаптироваться к погодным условиям .</p>
+    </div>
+    <a href="#" class="button">Посмотреть и купить</a>
+  </div>
+</div>
+
+<style>
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --purple: hsl(240, 80%, 89%);
+  --pink: hsl(0, 59%, 94%);
+  --light-bg: hsl(204, 37%, 92%);
+  --light-gray-bg: hsl(0, 0%, 94%);
+  --white: hsl(0, 0%, 100%);
+  --dark: hsl(0, 0%, 7%);
+  --text-gray: hsl(0, 0%, 30%);
+
+}
+
+body {
+  background: var(--light-bg);
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--dark);
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.7;
+  font-weight: 300;
+  color: var(--text-gray);
+}
+
+.description {
+  white-space: wrap;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrap {
+  display: flex;
+  justify: space-between;
+  align-items: stretch;
+  width: 100%;
+  gap: 24px;
+  padding: 24px;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  position: relative;
+  padding: 24px;
+  background: #fff;
+}
+
+    @media (max-width: 1440px) {
+    .box {
+         position:relative;
+    top:-100px;
+        }
+}
+
+    @media (max-width: 1024px) {
+    .box {
+         position:relative;
+    top:-200px;
+        }
+}
+
+    @media (max-width: 768px) {
+    .box {
+         position:relative;
+    top:-300px;
+        }
+}
+
+
+    @media (max-width: 600px) {
+    .box {
+         position:relative;
+    top:-400px;
+        }
+}
+
+    @media (max-width: 425px) {
+    .box {
+         position:relative;
+    top:-500px;
+        }
+}
+
+
+
+.box-top {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.box-image {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.title-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-title {
+  border-left: 3px solid var(--purple);
+  padding-left: 12px;
+}
+
+.user-follow-info {
+  color: hsl(0, 0%, 60%);
+}
+
+
+
+.button:hover {
+  background: var(--purple);
+}
+
+.fill-one {
+  background: var(--light-bg);
+}
+
+.fill-two {
+  background: var(--pink);
+}
+
+/* RESPONSIVE QUERIES */
+
+@media (min-width: 320px) {
+  .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 460px) {
+  .title-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 640px) {
+  .box {
+    flex-basis: calc(50% - 12px);
+  }
+  .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 840px) {
+  .title-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box {
+    flex-basis: calc(33.3% - 16px);
+  }
+  .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .box {
+    flex-basis: calc(25% - 18px);
+  }
+}
+
+</style>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
