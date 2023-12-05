@@ -503,7 +503,301 @@ padding: 13px;
 
 </style>
 
-</div>
+
+<div class="wrapi animate pop" >
+		<div class="overlay" >
+			<div class="overlay-content animate slide-left delay-2">
+				<h2 class="animate slide-left pop delay-4">Мода</h2>
+				<p class="animate slide-left pop delay-5" style="color: black; margin-bottom: 2.5rem;" >Тин <em>Пон</em></p>
+			</div>
+			<div class="image-content animate slide delay-5" ></div>
+					<div class="dots animate">
+						<div class="dot animate slide-up delay-6"></div>
+						<div class="dot animate slide-up delay-7"></div>
+						<div class="dot animate slide-up delay-8"></div>
+					</div>
+		</div>
+			<div class="texty">
+				<p style="color:black;"><img class="inset" src="img/banner-18-1.jpg" alt="" />Мода - это не только стиль, но и выражение индивидуальности. Модная одежда помогает подчеркнуть свою уникальность и выделиться из толпы. С каждым сезоном модные тенденции меняются, и каждый может найти что-то подходящее для себя.</p>
+				<p style="color:black;">Сегодня мода предлагает разнообразные варианты - от классических и элегантных образов до ярких и экстравагантных. Важно выбирать одежду, которая подходит по фигуре и отображает ваш вкус.</p>
+				<p>Модные тренды включают в себя различные фасоны, цвета и текстуры. Например, в этом сезоне популярны яркие цвета, асимметричные формы и объемные рукава. Также в тренде натуральные ткани и удобные крои, которые подчеркивают естественную красоту.</p>
+			</div>
+	</div>
+
+<style>
+	* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+
+    @media (max-width: 1440px) {
+    .wrapi {
+         position:relative;
+    top:-100px;
+        }
+}
+
+    @media (max-width: 1024px) {
+    .wrapi{
+         position:relative;
+    top:-200px;
+        }
+}
+
+    @media (max-width: 768px) {
+    .wrapi {
+         position:relative;
+    top:-300px;
+        }
+}
+
+
+    @media (max-width: 600px) {
+    .wrapi {
+         position:relative;
+    top:-400px;
+        }
+}
+
+    @media (max-width: 425px) {
+    .wrapi {
+         position:relative;
+    top:-500px;
+        }
+}
+
+    @media (max-width: 310px) {
+     {
+
+        }
+}
+
+h2 {
+	font-size: 5.25vmin;
+	text-align: center;
+	color: black;
+}
+p {
+	font-size: max(10pt, 2.5vmin);
+	line-height: 1.4;
+	color: black;
+	margin-bottom: 1.5rem;
+}
+
+.wrapi {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 85vmin;
+	height: 25em;
+	margin: 2rem auto;
+	border: 8px solid;
+	border: red;
+	transition: .3s ease-in-out;
+	position: relative;
+	overflow: hidden;
+	position:relative;width:80%;
+	height:500px;
+}
+
+
+.overlay {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 1rem .75rem;
+	background:  white;
+	transition: .4s ease-in-out;
+	z-index: 1;
+}
+.overlay-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 15vmin;
+	height: 100%;
+	padding: .5rem 0 0 .5rem;
+	border: 3px solid;
+	border-image:
+    	linear-gradient(
+      	to bottom,
+      	#AEA724 5%,
+      	#AEA724 95%
+    	) 0 0 0 100%;
+	transition: .3s ease-in-out .2s;
+	z-index: 1;
+}
+.image-content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 150vmin;
+	height: 100%;
+	background-image: url("img/banner-18-1.jpg");
+	background-size: cover;
+	transition: .3s ease-in-out;
+	/* border: 1px solid green; */
+}
+
+.inset {
+	max-width: 50%;
+	margin: 0.25em 1em 1em 0;
+	border-radius: 0.25em;
+	float: left;
+
+}
+
+.dots {
+	position: absolute;
+	bottom: 1rem;
+	right: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 55px;
+	height: 4vmin;
+	transition: .3s ease-in-out .3s;
+}
+.dot {
+	width: 14px;
+	height: 14px;
+	background: white;
+	border: 1px solid indigo;
+	border-radius: 50%;
+	transition: .3s ease-in-out .3s;
+}
+
+.texty {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vmin;
+	height: 100%;
+	padding: 3vmin 4vmin;
+	background: #fff;
+	box-shadow: inset 1px 1px 15px 0 rgba(0 0 0 / .4);
+	overflow-y: scroll;
+}
+
+.wrapi:hover .overlay
+ {
+	transform: translateX(-60vmin);
+}
+.wrapi:hover .image-content {
+	width: 100vmin;
+}
+.wrapi:hover .overlay-content {
+	border: none;
+	transition-delay: .2s;
+	transform: translateX(60vmin);
+}
+.wrapi:hover .dots {
+	transform: translateX(1rem);
+}
+.wrapi:hover .dots .dot {
+	background: white;
+}
+
+
+/* Animations and timing delays */
+.animate {
+  animation-duration: 0.7s;
+  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+  animation-fill-mode: backwards;
+}
+/* Pop In */
+.pop { animation-name: pop; }
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+/* Slide In */
+.slide { animation-name: slide; }
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translate(4em, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+/* Slide Left */
+.slide-left { animation-name: slide-left; }
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translate(-40px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.slide-up {animation-name: slide-up;}
+@keyframes slide-up {
+	0% {
+		opacity: 0;
+		transform: translateY(3em);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+.delay-2 {
+  animation-delay: 0.6s;
+}
+.delay-3 {
+  animation-delay: 0.9s;
+}
+.delay-4 {
+  animation-delay: 1.2s;
+}
+.delay-5 {
+  animation-delay: 1.5s;
+}
+.delay-6 {
+  animation-delay: 1.8s;
+}
+.delay-7 {
+  animation-delay: 2.1s;
+}
+.delay-8 {
+  animation-delay: 2.4s;
+}
+
+
+body {
+background: #DFC2F2;
+	background-image: linear-gradient( to right, #ffffb3,#ffe6e6);
+	background-attachment: fixed;
+	background-size: cover;
+
+	}
+</style>
+
+
+
 
 
 
